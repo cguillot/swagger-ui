@@ -20,9 +20,11 @@
   "readmeFilename": "README.md",
   "dependencies": {
     "coffee-script": "~1.6.3",
-    "swagger-client": "2.0.41",
     "handlebars": "~1.0.10",
+    "js-yaml": "^3.2.3",
     "less": "~1.4.2",
-    "shelljs": "~0.3.0"
+    "marked": "^0.3.2",
+    "shelljs": "~0.3.0",
+    "swagger-client": "2.0.41"
   }
 }

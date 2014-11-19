@@ -5,6 +5,9 @@ class MainView extends Backbone.View
   }
 
   initialize: (opts={}) ->
+    Handlebars.registerHelper 'gfmText', (gfmText) -> 
+      marked gfmText
+
     # set up the UI for input
     @model.auths = []
     for key, value of @model.securityDefinitions

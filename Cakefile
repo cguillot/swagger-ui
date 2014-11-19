@@ -101,6 +101,9 @@ task 'dist', 'Build a distribution', ->
     shelljs.cp('-fr', 'lib', 'dist');
     console.log '   : Copied swagger-ui libs'
     shelljs.cp('-fr', 'node_modules/swagger-client/lib/swagger.js', 'dist/lib')
+    shelljs.cp('-fr', 'node_modules/js-yaml/dist/js-yaml.js', 'dist/lib')
+    shelljs.cp('-fr', 'node_modules/js-yaml/node_modules/esprima/esprima.js', 'dist/lib')
+    shelljs.cp('-fr', 'node_modules/marked/lib/marked.js', 'dist/lib')
     console.log '   : Copied swagger dependencies'
     shelljs.cp('-fr', 'src/main/html/*', 'dist')
     console.log '   : Copied html dependencies'
